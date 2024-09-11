@@ -1,0 +1,159 @@
+.bgUrl {
+  height: 345px;
+  width: 100%;
+  background-image: url("https://www.preciousbloodhv.edu.hk/sites/all/themes/ntemplate/images/web/header.png");
+  position: relative;
+  background-size: cover;
+}
+
+.login {
+  margin-right: 10px;
+  background: #e8e0d3;
+  border-left: 3px solid #805531;
+  border-bottom: 3px solid #805531;
+  border-right: 3px solid #805531;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 11px 10px;
+  font-size: 15px;
+  z-index: 4;
+}
+
+.move {
+  text-align: center;
+  width: 100%;
+}
+.move:hover > img {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.move:hover > nav > .show {
+  display: block;
+}
+.show {
+  display: none;
+  position: absolute;
+  width: 14%;
+  z-index: 2;
+}
+.move > div {
+  border-right: 2px dashed white;
+}
+.item {
+  border-bottom: 1px solid black;
+  background-color: white;
+  position: relative;
+}
+
+.item:hover {
+  background-color: orange;
+}
+
+.item:hover > .itemUl {
+  display: block;
+}
+
+.itemUl {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+.buttonCSS {
+  /* margin-top: 15px; */
+  background: #fff;
+  color: #333;
+  padding: 8px 30px;
+  border-radius: 16px;
+  border: 3px solid #f8b62d;
+}
+
+.buttonCSS2 {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 80px;
+  background: #f8b62d;
+  color: #000;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 0px;
+  font-size: 17px;
+  display: block;
+}
+
+.scrolltextcontainer {
+  width: 75%; /* 容器宽度 */
+  overflow: hidden; /* 隐藏超出容器的部分 */
+  white-space: nowrap; /* 保持文字在一行内显示 */
+  box-sizing: border-box; /* 使得padding和border包含在宽度内 */
+  position: relative; /* 为绝对定位的子元素设置定位上下文 */
+  height: 50px; /* 容器高度，根据需要调整 */
+  line-height: 50px; /* 文字行高，与容器高度相同以实现垂直居中 */
+  background-color: #f0f0f0; /* 背景颜色，根据需要调整 */
+  border-radius: 16px;
+}
+
+.scrolltext {
+  width: 80%;
+  right: 0;
+  position: absolute; /* 绝对定位 */
+  white-space: nowrap; /* 保持文字在一行内 */
+  animation: scrollText 15s linear infinite; /* 应用动画 */
+}
+
+/* 定义动画 */
+@keyframes scrollText {
+  from {
+    transform: translateX(100%); /* 从容器右侧开始 */
+  }
+  to {
+    transform: translateX(-100%); /* 滚动到容器左侧并继续 */
+  }
+}
+
+.input {
+  margin-left: 10px;
+  z-index: 10;
+  width: 100px;
+  background: #fff;
+  border: 2px solid #d19b0b;
+  padding: 2px;
+  height: 28px;
+  font-size: 12px;
+  color: #666;
+  border-radius: 8px;
+}
+
+.submit {
+  margin-left: 10px;
+  background: #8f593f;
+  border: 3px solid #682f14;
+  color: #fff;
+  font-family: "cwTeXYen";
+  font-size: 15px;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.zhejiao {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 20px solid rgb(168, 143, 114);
+  border-right: 20px solid rgb(168, 143, 114);
+  border-bottom: 20px solid rgb(255, 237, 213);
+  border-left: 20px solid rgb(255, 237, 213);
+}
+.imgScale{
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.imgScale:hover > img {
+  transform: scale(1.2);
+  border-radius: 1rem;
+}
